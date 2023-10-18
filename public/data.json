@@ -1,0 +1,146 @@
+[
+  {
+    "brandId": 1,
+    "brand": "Apple",
+    "items": [
+      {
+        "id": 1,
+        "name": "iPhone 13",
+        "type": "Smartphone",
+        "price": 799,
+        "rating": 4.5,
+        "shortDescription": "The iPhone 13 features a powerful A15 Bionic chip and a dual-camera system for exceptional photography.",
+        "image": "iphone13_image.jpg"
+      },
+      {
+        "id": 2,
+        "name": "MacBook Air",
+        "type": "Laptop",
+        "price": 999,
+        "rating": 4.7,
+        "shortDescription": "The MacBook Air is a thin and lightweight laptop with an M1 chip and a brilliant Retina display.",
+        "image": "macbookair_image.jpg"
+      }
+    ]
+  },
+  {
+    "brandId": 2,
+    "brand": "Samsung",
+    "items": [
+      {
+        "id": 3,
+        "name": "Samsung Galaxy S21 Ultra",
+        "type": "Smartphone",
+        "price": 1199,
+        "rating": 4.8,
+        "shortDescription": "The Galaxy S21 Ultra is a flagship smartphone with a powerful camera system and a large AMOLED display.",
+        "image": "s21ultra_image.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Samsung 55-Inch QLED 4K TV",
+        "type": "Television",
+        "price": 1199,
+        "rating": 4.6,
+        "shortDescription": "This QLED TV delivers stunning 4K visuals with Quantum Dot technology and smart features.",
+        "image": "samsungtv_image.jpg"
+      }
+    ]
+  },
+  {
+    "brandId": 3,
+    "brand": "Sony",
+    "items": [
+      {
+        "id": 5,
+        "name": "Sony PlayStation 5",
+        "type": "Gaming Console",
+        "price": 499,
+        "rating": 4.9,
+        "shortDescription": "The PlayStation 5 offers incredible gaming experiences with ultra-fast load times and exclusive titles.",
+        "image": "ps5_image.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Sony WH-1000XM4 Wireless Headphones",
+        "type": "Headphones",
+        "price": 349,
+        "rating": 4.7,
+        "shortDescription": "These noise-canceling headphones provide premium sound quality and comfort for an immersive audio experience.",
+        "image": "sonyheadphones_image.jpg"
+      }
+    ]
+  },
+  {
+    "brandId": 4,
+    "brand": "Google",
+    "items": [
+      {
+        "id": 7,
+        "name": "Google Pixel 6 Pro",
+        "type": "Smartphone",
+        "price": 899,
+        "rating": 4.6,
+        "shortDescription": "The Pixel 6 Pro boasts an excellent camera system, stock Android experience, and 5G connectivity.",
+        "image": "pixel6pro_image.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Google Nest Hub",
+        "type": "Smart Display",
+        "price": 129,
+        "rating": 4.5,
+        "shortDescription": "The Nest Hub is a smart display that can control smart home devices, display information, and play music.",
+        "image": "nesthub_image.jpg"
+      }
+    ]
+  },
+  {
+    "brandId": 5,
+    "brand": "Intel",
+    "items": [
+      {
+        "id": 9,
+        "name": "Intel Core i9-11900K Processor",
+        "type": "CPU",
+        "price": 549,
+        "rating": 4.8,
+        "shortDescription": "The Core i9-11900K is a high-performance CPU for gaming and content creation.",
+        "image": "intelcpu_image.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Intel 1TB 660p NVMe SSD",
+        "type": "Solid-State Drive",
+        "price": 119,
+        "rating": 4.7,
+        "shortDescription": "This NVMe SSD offers fast storage for your PC with reliable performance.",
+        "image": "intelssd_image.jpg"
+      }
+    ]
+  },
+  {
+    "brandId": 6,
+    "brand": "Canon",
+    "items": [
+      {
+        "id": 11,
+        "name": "Canon EOS 5D Mark IV",
+        "type": "Digital Camera",
+        "price": 2499,
+        "rating": 4.8,
+        "shortDescription": "The EOS 5D Mark IV is a professional-grade DSLR camera with outstanding image quality.",
+        "image": "canoncamera_image.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Canon PIXMA Pro-100 Printer",
+        "type": "Printer",
+        "price": 379,
+        "rating": 4.6,
+        "shortDescription": "The PIXMA Pro-100 is a high-quality photo printer for professional photographers and enthusiasts.",
+        "image": "canonprinter_image.jpg"
+      }
+    ]
+  }
+]

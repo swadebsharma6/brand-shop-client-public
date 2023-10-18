@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const BrandCard = ({item}) => {
 
@@ -13,7 +14,7 @@ const BrandCard = ({item}) => {
         <div className="card-body items-center text-center">
           <h2 className="card-title">{brand}</h2>
           <div className="card-actions">
-            <button className="btn btn-primary">Explore More Now</button>
+            <Link to={`/category/${item.id}`}><button className="btn btn-primary">Explore More Now</button></Link>
           </div>
         </div>
       </div>
