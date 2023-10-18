@@ -1,9 +1,15 @@
+import DiscountSection from "../../components/HomeComponents/DiscountSection";
+import MarqueLoading from "../../components/HomeComponents/MarqueLoading";
+import Slider from "./Slider";
 
 
 const Home = () => {
     return (
         <div>
-           Home 
+           <Slider></Slider>
+           <MarqueLoading></MarqueLoading>
+           <DiscountSection></DiscountSection>
+          
         </div>
     );
 };
