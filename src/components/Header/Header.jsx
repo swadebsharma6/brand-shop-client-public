@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Header = () => {
@@ -20,10 +20,7 @@ const Header = () => {
   to="/cart"
   className={({ isActive, }) => isActive ? "font-bold text-orange-500" : ""}> My Cart
  </NavLink></li> 
-    <li><NavLink
-    to="/login"
-    className={({ isActive, }) => isActive ? "font-bold text-orange-500" : ""}>Login
-   </NavLink> </li>
+
     
     </>
 
@@ -48,11 +45,11 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-sm btn-primary">Login</a>
+          <Link to='/login'><button className="btn btn-sm btn-primary">Login</button></Link>
         </div>
       </div>
         </section>
     );
 };
 
-export default Header;
+export default Header;  
