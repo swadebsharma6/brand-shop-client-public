@@ -9,6 +9,7 @@ import ItemDetails from '../Pages/ItemDetails/ItemDetails';
 import Login from '../Pages/Login/Login';
 import MyCart from '../Pages/MyCart/MyCart';
 import Register from '../Pages/Register/Register';
+import PrivetRoute from '../SecrectRoute/PrivetRoute';
 
 const routes = createBrowserRouter([
     {
@@ -29,7 +30,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/about',
-                element: <About></About>
+                element: <PrivetRoute><About></About></PrivetRoute>
             },
             {
                 path: '/add',
