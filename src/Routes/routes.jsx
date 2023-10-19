@@ -9,6 +9,7 @@ import ItemDetails from '../Pages/ItemDetails/ItemDetails';
 import Login from '../Pages/Login/Login';
 import MyCart from '../Pages/MyCart/MyCart';
 import Register from '../Pages/Register/Register';
+import UpdateProduct from '../Pages/UpdateProduct/UpdateProduct';
 import PrivetRoute from '../SecrectRoute/PrivetRoute';
 
 const routes = createBrowserRouter([
@@ -18,7 +19,8 @@ const routes = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Home></Home>,
+               
             },
             {
                 path: '/category/:id',
@@ -35,6 +37,10 @@ const routes = createBrowserRouter([
             {
                 path: '/add',
                 element: <AddProduct></AddProduct>
+            },
+            {
+                path: 'update',
+                element: <UpdateProduct></UpdateProduct>
             },
             {
                 path: '/cart',

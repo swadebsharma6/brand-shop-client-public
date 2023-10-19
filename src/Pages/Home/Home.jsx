@@ -3,10 +3,12 @@ import Collection from "../../components/HomeComponents/Collection";
 import DiscountSection from "../../components/HomeComponents/DiscountSection";
 import MarqueLoading from "../../components/HomeComponents/MarqueLoading";
 import Popular from "../../components/HomeComponents/Popular";
+import Product from "./Product/Product";
 import Slider from "./Slider";
 
 
 const Home = () => {
+ 
     return (
         <div>
            <Slider></Slider>
@@ -15,6 +17,7 @@ const Home = () => {
            <Collection></Collection>
            <Popular></Popular>
            <DiscountSection></DiscountSection>
+           <Product></Product>
            <Footer></Footer>
            
           
