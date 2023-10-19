@@ -1,14 +1,19 @@
-import { useContext } from "react";
-import { AuthContext } from "../../Provider/AuthProvider";
+import Footer from "../../components/Header/Footer/Footer";
+import AboutUs from "./AboutComponents/AboutUs";
+import Banner from "./AboutComponents/Banner";
+import CustomerReview from "./AboutComponents/CustomerReview";
 
 
 const About = () => {
 
-    const {user} = useContext(AuthContext)
+    
 
     return (
         <div>
-            <h2>This is About : {user && user}</h2>
+            <Banner></Banner>
+            <AboutUs></AboutUs>
+            <CustomerReview></CustomerReview>
+            <Footer></Footer>
         </div>
     );
 };
