@@ -23,7 +23,7 @@ const MyProduct = ({product}) => {
             //     'success'
             //   )
                 
-            fetch(`http://localhost:5000/products/${ID}`,{
+            fetch(`https://brand-shop-server-site-lgndkuji3-swadebsharma6.vercel.app/products/${ID}`,{
                 method: "DELETE"
             })
             .then(res => res.json())
