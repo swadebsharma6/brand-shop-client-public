@@ -4,8 +4,8 @@ import Main from '../Main/Main';
 import About from '../Pages/About/About';
 import AddProduct from '../Pages/AddProduct/AddProduct';
 import Category from '../Pages/Home/Category/Category';
+import ProductDetails from '../Pages/Home/Category/ProductDetails';
 import Home from '../Pages/Home/Home';
-import ItemDetails from '../Pages/ItemDetails/ItemDetails';
 import Login from '../Pages/Login/Login';
 import MyCart from '../Pages/MyCart/MyCart';
 import Register from '../Pages/Register/Register';
@@ -24,11 +24,14 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/category/:id',
-                element: <Category></Category>
+                element: <Category></Category>,
+                loader: ()=> fetch(`http://localhost:5000/products`)
             },
             {
-                path: ':id',
-                element: <ItemDetails></ItemDetails>
+                path: '/products/:id',
+                element: <ProductDetails></ProductDetails>,
+                loader: ({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+              
             },
             {
                 path: '/about',
