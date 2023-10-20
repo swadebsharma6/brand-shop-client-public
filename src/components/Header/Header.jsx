@@ -54,7 +54,7 @@ const Header = () => {
              {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="btn btn-ghost normal-case font-bold text-2xl">SM Tech Store</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu font-bold  menu-horizontal px-1">

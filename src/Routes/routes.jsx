@@ -39,7 +39,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/add',
-                element: <AddProduct></AddProduct>
+                element: <PrivetRoute><AddProduct></AddProduct></PrivetRoute>
             },
             {
                 path: 'update',
@@ -47,7 +47,9 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/cart',
-                element: <MyCart></MyCart>
+                element: <MyCart></MyCart>,
+                loader: ()=> fetch(`http://localhost:5000/products`)
+
             },
             {
                 path: '/login',

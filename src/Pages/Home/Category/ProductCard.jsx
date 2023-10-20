@@ -21,7 +21,7 @@ const ProductCard = ({product}) => {
       <button className="btn btn-outline btn-secondary">Updates</button>
     </div>
   </div>
-</div>
+        </div>
         </div>
     );
 };
