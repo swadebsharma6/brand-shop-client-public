@@ -8,7 +8,7 @@ const Collection = () => {
 
 
     useEffect(()=>{
-        fetch('/public/brands.json')
+        fetch('http://localhost:5000/brands')
         .then(res => res.json())
         .then(data => setBrands(data))
     }, []);
@@ -23,7 +23,7 @@ const Collection = () => {
             <div className="grid md:grid-cols-3 gap-6">
             {
                 brands.map(item => <BrandCard
-                    key={item.id}
+                    key={item._id}
                     item={item}
                     ></BrandCard>)
             }
