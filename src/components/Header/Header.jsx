@@ -43,8 +43,8 @@ const Header = () => {
 
 
     return (
-        <section>
-        <div className="navbar bg-base-200">
+        <section className=" bg-sky-600 text-white py-6">
+        <div className="navbar max-w-6xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

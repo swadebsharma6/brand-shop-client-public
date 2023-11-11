@@ -6,10 +6,10 @@ import watch from '../../assets/images/smart-watch.jpg';
 
 const Popular = () => {
     return (
-        <section className="my-10">
-        <div className="my-8">
-             <div className="text-center py-5 border-b-4">
-             <h4 className="text-5xl underline font-semibold mb-5 text-orange-600">Popular Now</h4>
+        <section className="max-w-6xl mx-auto my-10">
+        <div className="my-4">
+             <div className="text-center">
+             <h4 className="text-4xl font-semibold text-primary underline">Popular Now</h4>
              
              </div>
         </div>

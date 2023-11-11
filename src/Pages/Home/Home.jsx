@@ -3,7 +3,8 @@ import Collection from "../../components/HomeComponents/Collection";
 import DiscountSection from "../../components/HomeComponents/DiscountSection";
 import MarqueLoading from "../../components/HomeComponents/MarqueLoading";
 import Popular from "../../components/HomeComponents/Popular";
-import Product from "./Product/Product";
+import FAQ from "./FAQ";
+import Optimaized from "./Optimaized";
 import Slider from "./Slider";
 
 
@@ -11,13 +12,15 @@ const Home = () => {
  
     return (
         <div>
+           
            <Slider></Slider>
            <DiscountSection></DiscountSection>
-           <MarqueLoading></MarqueLoading>
+           <Optimaized></Optimaized>
            <Collection></Collection>
            <Popular></Popular>
            <DiscountSection></DiscountSection>
-           <Product></Product>
+            <FAQ></FAQ>
+           <MarqueLoading></MarqueLoading>
            <Footer></Footer>
            
           

@@ -23,14 +23,14 @@ const routes = createBrowserRouter([
       {
         path: "/category/:id",
         element: <Category></Category>,
-        loader: () => fetch(`https://brand-shop-server-site-lgndkuji3-swadebsharma6.vercel.app/products/`)
+        loader: () => fetch(`http://localhost:5000/products/`)
       },
       {
         path: "/products/:id",
         element: <ProductDetails></ProductDetails>,
         loader: ({ params }) =>
           fetch(
-            `https://brand-shop-server-site-lgndkuji3-swadebsharma6.vercel.app/products/${params.id}`
+            `http://localhost:5000/products/${params.id}`
           ),
       },
       {
@@ -58,7 +58,7 @@ const routes = createBrowserRouter([
         element: <MyCart></MyCart>,
         loader: () =>
           fetch(
-            `https://brand-shop-server-site-lgndkuji3-swadebsharma6.vercel.app/products`
+            `http://localhost:5000/products`
           ),
       },
       {

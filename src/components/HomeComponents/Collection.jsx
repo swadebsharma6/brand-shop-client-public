@@ -17,8 +17,8 @@ const Collection = () => {
 
 
     return (
-        <section>
-            <h2 className="text-5xl font-bold underline text-center">Our Collection</h2>
+        <section className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-primary text-center underline">Our Collection</h2>
 
             <div className="grid md:grid-cols-3 gap-6">
             {

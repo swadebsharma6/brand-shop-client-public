@@ -2,7 +2,7 @@ import phone from '../../assets/images/phone.jpg';
 
 const DiscountSection = () => {
     return (
-        <section className="my-10 pb-5">
+        <section className="pb-5">
         <div className="md:flex m-0 items-center">
         <div className=" flex-1">
         <div className='flex-1'>

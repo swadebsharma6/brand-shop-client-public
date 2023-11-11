@@ -7,7 +7,7 @@ import watch from '../../assets/images/watch.jpg';
 
 const Slider = () => {
   return (
-    <section>
+    <section className='max-w-7xl mx-auto'>
       <div className="carousel h-[700px] bg-base-100 w-full">
         <div id="slide1" className="carousel-item relative  w-full">
           <div className="md:flex justify-around items-center">
