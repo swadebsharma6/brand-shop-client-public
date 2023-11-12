@@ -11,8 +11,10 @@ const About = () => {
     return (
         <div>
             <Banner></Banner>
+            <div className="max-w-6xl mx-auto">
             <AboutUs></AboutUs>
             <CustomerReview></CustomerReview>
+            </div>
             <Footer></Footer>
         </div>
     );

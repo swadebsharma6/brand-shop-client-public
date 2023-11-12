@@ -1,6 +1,7 @@
 
 
 import { useLoaderData } from "react-router-dom";
+import CategorySlide from "./CategorySlide";
 import ProductCard from "./ProductCard";
 
 
@@ -22,9 +23,8 @@ const Category = () => {
 
     return (
         <section className="max-w-6xl mx-auto">
+            <CategorySlide></CategorySlide>
              <div className="grid md:grid-cols-2  gap-4">
-            
-             
                {    
 
                 loadedProducts.map(product => <ProductCard

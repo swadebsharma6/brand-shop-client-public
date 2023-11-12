@@ -3,8 +3,8 @@ import drone from '../../../assets/images/p-drone.jpg';
 
 const AboutUs = () => {
     return (
-        <section className="md:h-[550px] md:my-12 p-4">
-        <div>
+        <section>
+        <div className="md:h-[550px] md:my-12 p-4">
           <div className='md:flex items-center justify-center sm:py-3'>
           <div className='flex-1'>
             <div>
