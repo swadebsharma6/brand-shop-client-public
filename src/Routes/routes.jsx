@@ -21,7 +21,7 @@ const routes = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/category/:id",
+        path: "/category/:brand",
         element: <Category></Category>,
         loader: () => fetch(`http://localhost:5000/products/`)
       },
