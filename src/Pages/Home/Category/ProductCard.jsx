@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 
 const ProductCard = ({product}) => {
 
+ 
   const {_id,name, brand, type, price,photo,rating} = product;
-  console.log(product)
+
 
     
     return (
@@ -20,6 +21,7 @@ const ProductCard = ({product}) => {
     <p className='font-bold text-xl '><span className='font-bold'>Category:</span> {type}</p>
     <p className='text-lg font-bold'> Price:  ${price}</p>
     <p className='text-lg font-bold'> Rating: {rating}</p>
+    <p className='text-lg font-bold'> Id: {_id}</p>
     <div className="card-actions justify-end">
       <Link to={`/details/${_id}`}><button className="btn btn-primary">Details</button></Link> 
       <button className="btn btn-secondary">Updates</button>

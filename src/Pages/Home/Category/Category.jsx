@@ -7,10 +7,10 @@ const Category = () => {
   const {brand} = useParams();
 
   const loadedProducts = useLoaderData();
-  console.log(brand,loadedProducts)
+ 
 
   const allProducts = loadedProducts.filter(product => product.brand === brand);
-  console.log(allProducts);
+  console.log(brand, allProducts);
 
   return (
     <section className="max-w-6xl mx-auto">

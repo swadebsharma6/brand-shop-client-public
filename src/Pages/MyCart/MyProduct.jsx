@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 import Swal from "sweetalert2";
 
 
-const MyProduct = ({product}) => {
+const MyProduct = ({product, remainProducts, setRemaining}) => {
     const {_id,name, brand, type, price,photo,} = product;
 
-    const handleDelete = ID =>{
-        console.log('delete ', ID);
+    const handleDelete = id =>{
+        console.log('delete ', id);
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -16,28 +16,21 @@ const MyProduct = ({product}) => {
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
-            if (result.isConfirmed) {
-            //   Swal.fire(
-            //     'Deleted!',
-            //     'Your file has been deleted.',
-            //     'success'
-            //   )
-                
-            fetch(`https://brand-shop-server-site-lgndkuji3-swadebsharma6.vercel.app/products/${ID}`,{
+            if (result.isConfirmed) { 
+            fetch(`http://localhost:5000/carts/${id}`,{
                 method: "DELETE"
             })
             .then(res => res.json())
             .then(data =>{
                 console.log(data)
-                if(data.deletedCount){
-                    Swal.fire(
-                            'Deleted!',
-                            'Your Product has been deleted.',
-                            'success'
-                          ) 
-                }
-            })
+                if(data.deletedCount > 0){
+                   alert('Delete data');
 
+                   const remaining = remainProducts.filter(item =>item._id !== id);
+                   setRemaining(remaining)
+                     }
+                
+            })
 
             }
           })
@@ -46,7 +39,7 @@ const MyProduct = ({product}) => {
     return (
         <div className="h-[400px] m-8">
         <div className="card bg-base-100 shadow-xl">
-   <figure><img className="w-[500px] h-[250px] rounded-2xl" src={photo} alt="Shoes" /></figure>
+   <figure><img className="w-[500px] h-[250px] rounded-2xl" src={photo && photo} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">
       {brand}
