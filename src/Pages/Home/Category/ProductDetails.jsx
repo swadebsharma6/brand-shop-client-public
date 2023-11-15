@@ -1,13 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 
 
+
 const ProductDetails = () => {
 
     const product = useLoaderData();
     console.log(product)
-
-    // const {name, brand, type, price,description,photo,rating} = product;
-
 
     return (
         <section className="mt-20">

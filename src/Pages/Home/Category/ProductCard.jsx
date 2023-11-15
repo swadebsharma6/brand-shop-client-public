@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const ProductCard = ({product,}) => {
-  // console.log(product)
+const ProductCard = ({product}) => {
 
   const {_id,name, brand, type, price,photo,rating} = product;
+  console.log(product)
+
     
     return (
         <div className="m-8">
