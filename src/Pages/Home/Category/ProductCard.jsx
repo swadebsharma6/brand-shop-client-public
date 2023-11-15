@@ -23,8 +23,8 @@ const ProductCard = ({product}) => {
     <p className='text-lg font-bold'> Rating: {rating}</p>
     <p className='text-lg font-bold'> Id: {_id}</p>
     <div className="card-actions justify-end">
-      <Link to={`/details/${_id}`}><button className="btn btn-primary">Details</button></Link> 
-      <button className="btn btn-secondary">Updates</button>
+      <Link to={`/details/${_id}`}><button className="btn btn-outline border-0 border-b-4 bg-blue-200 btn-primary">Details</button></Link> 
+      <Link to={`/update/${_id}`}><button className="btn btn-outline border-0 border-b-4 bg-orange-300 btn-secondary">Updates</button></Link>
     </div>
   </div>
         </div>
