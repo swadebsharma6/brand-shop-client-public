@@ -28,7 +28,7 @@ const Footer = () => {
       </footer> 
       <footer className="footer px-10 py-4 border-t bg-blue-950 text-white border-base-300">
         <aside className="items-center grid-flow-col">
-          <p className="text-xl font-bold"> <span className="text-primary">edTech Solution.</span></p>
+          <p className="text-xl font-bold"> <span className="text-primary">sm Tech Store.</span></p>
           <p>Providing reliable tech since 2022</p>
         </aside> 
         <nav className="md:place-self-center md:justify-self-end">
