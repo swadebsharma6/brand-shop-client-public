@@ -1,4 +1,4 @@
-import toast from "react-hot-toast";
+import Swal from "sweetalert2";
 import Banner from "./Banner";
 
 
@@ -31,7 +31,11 @@ const AddProduct = () => {
         .then(data =>{
           console.log(data);
           if(data.insertedId){
-            toast.success('Add Product Successfully!');
+            Swal.fire({
+              title: "Success!",
+              text: "Product Added Successfully.",
+              icon: "success"
+            });
             form.reset();
           }
         })

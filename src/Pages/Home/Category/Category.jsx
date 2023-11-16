@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import Footer from "../../../components/Header/Footer/Footer";
 import CategorySlide from "./CategorySlide";
 import ProductCard from "./ProductCard";
 
@@ -13,8 +14,10 @@ const Category = () => {
   console.log(brand, allProducts);
 
   return (
-    <section className="max-w-6xl mx-auto">
-      <CategorySlide></CategorySlide>
+    <section>
+    
+    <div className="max-w-6xl mx-auto">
+    <CategorySlide></CategorySlide>
       <div className="grid md:grid-cols-2  gap-4">
         {
           allProducts.map((product) => (
@@ -25,6 +28,8 @@ const Category = () => {
         ))
       }
       </div>
+    </div>
+    <Footer></Footer>
     </section>
   );
 };

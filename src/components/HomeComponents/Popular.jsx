@@ -9,7 +9,7 @@ const Popular = () => {
         <section className="max-w-6xl mx-auto my-10">
         <div className="my-4">
              <div className="text-center">
-             <h4 className="text-4xl font-semibold text-primary underline">Popular Now</h4>
+             <h4 className="text-3xl font-bold text-primary underline">Popular Now</h4>
              
              </div>
         </div>

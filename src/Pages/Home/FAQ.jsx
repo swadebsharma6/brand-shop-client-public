@@ -2,7 +2,7 @@ import faq from '../../assets/images/faq.jpg';
 
 const FAQ = () => {
     return (
-        <section className='bg-gray-300 p-10'>
+        <section className='bg-gray-300 p-10 my-10'>
             
             <div className='max-w-6xl mx-auto md:flex gap-4 items-center justify-around'>
                 {/*Faq1 */}

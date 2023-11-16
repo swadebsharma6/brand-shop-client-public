@@ -16,7 +16,7 @@ const Collection = () => {
 
     return (
         <section className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-primary text-center underline">Our Collection: {brands.length}</h2>
+            <h2 className="text-3xl font-bold text-primary text-center underline">Our Collection</h2>
 
             <div className="grid md:grid-cols-3 gap-6">
             {

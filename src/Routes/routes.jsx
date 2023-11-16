@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
 import About from "../Pages/About/About";
 import AddProduct from "../Pages/AddProduct/AddProduct";
+import Error from "../Pages/ErrorPage/Error";
 import Category from "../Pages/Home/Category/Category";
 import ProductDetails from "../Pages/Home/Category/ProductDetails";
 import Home from "../Pages/Home/Home";
@@ -69,6 +70,7 @@ const routes = createBrowserRouter([
         element: <Register></Register>,
       },
     ],
+    errorElement: <Error></Error>
   },
 ]);
 

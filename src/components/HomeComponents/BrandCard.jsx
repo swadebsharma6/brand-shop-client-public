@@ -9,12 +9,12 @@ const BrandCard = ({item,}) => {
         <section>
         <div className="card   bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
-          <img src={brand_image} alt="Shoes" className="w-full h-[120px] rounded-xl" />
+          <img src={brand_image} alt="Shoes" className="md:w-[300px] rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{brand}</h2>
           <div className="card-actions">
-            <Link to={`/category/${brand}`}><button className="btn btn-primary">Explore More Now</button></Link>
+            <Link to={`/category/${brand}`}><button className="btn btn-outline border-0 border-b-4 btn-primary">Explore More</button></Link>
           </div>
         </div>
       </div>
