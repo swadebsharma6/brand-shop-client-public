@@ -11,14 +11,21 @@ const ProductDetails = () => {
 
     const handleAddToCart =() =>{
 
-        const  addProduct = {product};
+        const  product = {
+            brand: brand,
+            name: name, 
+            type: type,
+            price: price,
+            photo: photo,
+            rating: rating,
+        };
         
         fetch(`http://localhost:5000/carts`, {
             method: "POST",
             headers:{
                 'content-type': 'application/json'
             },
-            body:JSON.stringify(addProduct)
+            body:JSON.stringify(product)
         })
         .then(res => res.json())
         .then(data => {

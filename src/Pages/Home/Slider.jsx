@@ -8,12 +8,12 @@ import watch from '../../assets/images/watch.jpg';
 const Slider = () => {
   return (
     <section className='max-w-7xl mx-auto'>
-      <div className="carousel h-[700px] bg-base-100 w-full">
+      <div className="carousel md:h-[800px] bg-base-100 w-full">
         <div id="slide1" className="carousel-item relative  w-full">
           <div className="md:flex justify-around items-center">
             <div className="flex-1 px-20">
-              <h3 className="text-xl md:text-3xl uppercase">Apple products</h3>
-              <h2 className="text-3xl my-6 md:text-6xl font-bold font-mono">
+              <h3 className="text-xl md:text-3xl text-primary uppercase">Apple products</h3>
+              <h2 className="text-3xl my-6 md:text-6xl font-bold text-secondary ">
                 iMac 
                 <br />Collection 2023
               </h2>
@@ -40,8 +40,8 @@ const Slider = () => {
           {/*Single item*/}
           <div className="md:flex justify-around items-center">
           <div className="flex-1 px-20">
-            <h3 className="text-xl md:text-3xl uppercase">Apple Watches</h3>
-            <h2 className="text-3xl my-6 md:text-6xl font-bold font-mono">
+            <h3 className="text-xl md:text-3xl uppercase text-primary">Apple Watches</h3>
+            <h2 className="text-3xl my-6 md:text-6xl font-bold text-secondary">
               Watch 
               <br />Collection 2023
             </h2>
@@ -72,8 +72,8 @@ const Slider = () => {
           {/*Single item*/}
           <div className="md:flex justify-around items-center">
           <div className="flex-1 px-20">
-            <h3 className="text-xl md:text-3xl uppercase">Apple products</h3>
-            <h2 className="text-3xl my-6 md:text-6xl font-bold font-mono">
+            <h3 className="text-xl md:text-3xl uppercase text-primary">Apple products</h3>
+            <h2 className="text-3xl my-6 md:text-6xl font-bold text-secondary">
               Iphone 
               <br />Collection 2023
             </h2>
@@ -101,8 +101,8 @@ const Slider = () => {
           {/*Single item*/}
           <div className="md:flex justify-around items-center">
           <div className="flex-1 px-20">
-            <h3 className="text-xl md:text-3xl uppercase">Samsung products</h3>
-            <h2 className="text-3xl my-6 md:text-6xl font-bold font-mono">
+            <h3 className="text-xl md:text-3xl uppercase text-primary">Samsung products</h3>
+            <h2 className="text-3xl my-6 md:text-6xl font-bold text-secondary">
               Samsung 
               <br />Collection 2023
             </h2>

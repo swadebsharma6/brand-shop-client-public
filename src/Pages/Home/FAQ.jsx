@@ -2,12 +2,11 @@ import faq from '../../assets/images/faq.jpg';
 
 const FAQ = () => {
     return (
-        <section className='bg-gray-300 p-10 my-10'>
-            
+        <section className='bg-blue-300 p-10 my-20'>
+        <h2 className="text-5xl font-bold text-primary text-center my-6">Frequently Ask <span className="text-secondary">Question??</span></h2>
             <div className='max-w-6xl mx-auto md:flex gap-4 items-center justify-around'>
                 {/*Faq1 */}
-                <div className='flex-1'>
-                <h3 className='text-4xl font-bold mb-4'>FAQ</h3>
+                <div className='md:flex-1'>
                 <div className="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" checked="checked" /> 
                 <div className="collapse-title text-xl font-medium">
@@ -67,7 +66,7 @@ const FAQ = () => {
                 </div>
                 </div>
                 {/*Faq1 */}
-                <div className='flex-1'>
+                <div className='md:flex-1'>
                 <img className='rounded-xl' src={faq} alt="" />
                 
                 </div>

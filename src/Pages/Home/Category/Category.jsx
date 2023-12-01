@@ -15,9 +15,12 @@ const Category = () => {
 
   return (
     <section>
-    
-    <div className="max-w-6xl mx-auto">
     <CategorySlide></CategorySlide>
+    <div className="max-w-6xl mx-auto">
+    <div className="my-6">
+    <h2 className="text-5xl font-bold text-primary text-center mb-3">Our Awesome <span className="text-secondary">Collection</span></h2>
+    <p className="text-center font-bold">Choose Your Favorite One</p>
+    </div>
       <div className="grid md:grid-cols-2  gap-4">
         {
           allProducts.map((product) => (

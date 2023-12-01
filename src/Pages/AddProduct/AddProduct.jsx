@@ -1,4 +1,5 @@
 import Swal from "sweetalert2";
+import Footer from "../../components/Header/Footer/Footer";
 import Banner from "./Banner";
 
 
@@ -131,6 +132,7 @@ const AddProduct = () => {
            </div>
            </div>
          </div>
+         <Footer></Footer>
         </section>
     );
 };

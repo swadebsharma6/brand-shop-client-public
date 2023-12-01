@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import Footer from "../../components/Header/Footer/Footer";
 
 const MyCart = () => {
   const loadedProducts = useLoaderData();
+  
   const [remainProducts, setRemaining] = useState(loadedProducts);
 
   const handleDelete = (id) => {
@@ -18,7 +20,7 @@ const MyCart = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://brand-shop-server-site-ho8eewa3g-swadebsharma6.vercel.app/${id}`, {
+        fetch(`http://localhost:5000/carts/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -46,7 +48,7 @@ const MyCart = () => {
           remainProducts.map((product) => <section 
           key={product._id}
           >
-          <div className="card lg:card-side bg-base-100 shadow-xl my-3 px-5">
+          <div className="card lg:card-side bg-base-100 border border-primary-focus my-3 px-5">
           <figure><img className="w-32 h-32 rounded-xl" src={product.photo} alt="Album"/></figure>
           <div className="card-body">
             <h2 className="card-title">Name:{product.name}</h2>
@@ -59,6 +61,7 @@ const MyCart = () => {
         </div>
           </section>)}
       </div>
+      <Footer></Footer>
     </section>
   );
 };

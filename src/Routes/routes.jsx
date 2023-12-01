@@ -25,14 +25,14 @@ const routes = createBrowserRouter([
       {
         path: "/category/:brand",
         element: <Category></Category>,
-        loader: ()=> fetch(`https://brand-shop-server-site.vercel.app/`)
+        loader: ()=> fetch(`http://localhost:5000/products`)
        
       },
       
       {
         path: "details/:id",
         element: <ProductDetails></ProductDetails>,
-       loader: ({params}) => fetch(`https://brand-shop-server-site.vercel.app//${params.id}`)
+       loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
     
       },
       {
@@ -54,12 +54,12 @@ const routes = createBrowserRouter([
       {
         path: "update/:id",
         element: <UpdateProduct></UpdateProduct>,
-        loader: ({params}) => fetch(`https://brand-shop-server-site.vercel.app/${params.id}`)
+        loader: ({params}) => fetch(`http://localhost:5000/products${params.id}`)
       },
       {
         path: "/cart",
         element: <MyCart></MyCart>,
-        loader: () => fetch(`https://brand-shop-server-site.vercel.app/`),
+        loader: () => fetch(`http://localhost:5000/carts`),
       },
       {
         path: "/login",

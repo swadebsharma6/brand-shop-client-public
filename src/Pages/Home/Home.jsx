@@ -20,7 +20,6 @@ const Home = () => {
            <Optimaized></Optimaized>
            <Collection></Collection>
            <Popular></Popular>
-           <DiscountSection></DiscountSection>
             <FAQ></FAQ>
            <MarqueLoading></MarqueLoading>
            <Footer></Footer>
