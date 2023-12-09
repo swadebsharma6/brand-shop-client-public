@@ -1,8 +1,19 @@
-# React + Vite
+# About This Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    This project is Build from React and React router Dom.
+    Using Tailwind css for Design. And User authentication is handling with firebase.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    This is Brand Shop website Where User Can purchase the brand products.
+
+## Features
+
+- Implement a secure user authentication system using Firebase Authentication to allow users to sign up, log in, and manage their profiles.
+- Control access to certain parts of the application based on user roles.
+- This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+## Currently, two official plugins are available:
+
+## Server side - [Server Link](https://github.com/swadebsharma6/brand-shop-server-public)
+
+## Live Link - [Live Site link](https://brand-shop-88a21.web.app/)
